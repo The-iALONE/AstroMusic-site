@@ -13,9 +13,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${jerseySans.variable}`}>
         <ParticlesBackground>{children}</ParticlesBackground>
-        <footer className="mx-auto w-full max-w-6xl px-4 pb-4 text-left text-sm text-white/35 sm:px-6">
-          Web 0.1.0 Nova
-        </footer>
       </body>
     </html>
   );

@@ -76,18 +76,14 @@ export default function DownloadPage() {
             Music in the heart of the void.
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/60 sm:text-xl">
-            Download the latest AstroMusic Android experience and keep every
-            track, playlist, and discovery close at hand.
+            Download the latest Android release.
           </p>
         </section>
 
         <section className="overflow-hidden rounded-3xl border border-white/15 bg-black/35 shadow-2xl shadow-black/25 backdrop-blur-xl">
           <div className="flex flex-col gap-4 border-b border-white/10 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-7">
             <div>
-              <h2 className="text-2xl text-white">All versions</h2>
-              <p className="mt-1 text-sm text-white/45">
-                Choose a release for your setup.
-              </p>
+              <h2 className="text-2xl text-white">Releases</h2>
             </div>
             <div className="flex w-fit items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/10 px-3 py-1.5 text-sm text-emerald-200">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-300" />
@@ -118,7 +114,7 @@ export default function DownloadPage() {
                         <span className="text-lg text-white">v{release.version}</span>
                         {release.current && (
                           <span className="rounded-full border border-white/15 bg-white/10 px-2 py-1 text-xs text-white/60">
-                            Current
+                            latest
                           </span>
                         )}
                       </div>
@@ -156,8 +152,7 @@ export default function DownloadPage() {
         </section>
 
         <p className="mt-5 text-sm text-white/35">
-          AstroMusic for Android. All releases are signed and
-          verified.
+          © 2026 AstroMusic. All rights reserved.
         </p>
       </main>
     </div>

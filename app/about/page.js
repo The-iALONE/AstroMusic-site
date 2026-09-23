@@ -11,45 +11,28 @@ const features = [
     title: "Music manager",
     text: "Organize your tracks, extract their information, and edit metadata so your library stays clean and complete.",
   },
-  {
-    number: "03",
-    title: "Discover more",
-    text: "Build a more personal music experience around the way you listen and manage your collection.",
-  },
 ];
 
-// const futurePlans = [
-//   {
-//     number: "01",
-//     title: "AI song identification",
-//     text: "Find unknown songs and discover what is playing, inspired by tools like Shazam.",
-//   },
-//   {
-//     number: "02",
-//     title: "Smarter metadata",
-//     text: "Extract, complete, and edit song information automatically with AI assistance.",
-//   },
-//   {
-//     number: "03",
-//     title: "Automatic organization",
-//     text: "Sort tracks, improve tags, and keep your music library clean with less manual work.",
-//   },
-// ];
 const futurePlans = [
   {
     number: "01",
-    title: "dummy text",
-    text: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.",
+    title: "Core Music Player",
+    text: "A simple, focused player for listening to your music with the essentials you need.",
   },
   {
     number: "02",
-    title: "dummy text",
-    text: "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed.",
+    title: "Music Library",
+    text: "Organize and manage your local music collection in one place.",
   },
   {
     number: "03",
-    title: "Automatic organization",
-    text: "Sort tracks, improve tags, and keep your music library clean with less manual work.",
+    title: "Import & Metadata",
+    text: "Import music from different sources and make it easier to keep your library's information complete and organized.",
+  },
+  {
+    number: "04",
+    title: "Playlist Import & Export",
+    text: "Import and export playlists across devices while keeping track of the songs they contain.",
   },
 ];
 
@@ -66,15 +49,12 @@ export default function AboutPage() {
             Music, made personal.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/65 sm:text-2xl">
-            AstroMusic is both a music player and a music manager. Listen to
-            your collection, manage your tracks, extract and edit song
-            information, and keep your library organized in one place. It is
-            designed to give you a more personal music experience than the
-            usual music apps.
+            An Android music player and library manager built around your own
+            music collection.
           </p>
         </section>
 
-        <section className="mt-8 grid gap-px overflow-hidden rounded-3xl border border-white/15 bg-white/10 shadow-2xl shadow-black/25 backdrop-blur-xl sm:grid-cols-3">
+        <section className="mt-8 grid gap-px overflow-hidden rounded-3xl border border-white/15 bg-white/10 shadow-2xl shadow-black/25 backdrop-blur-xl sm:grid-cols-2">
           {features.map((feature) => (
             <article key={feature.number} className="bg-black/35 p-6 sm:p-7">
               <span className="text-sm text-white/35">{feature.number}</span>
@@ -88,14 +68,7 @@ export default function AboutPage() {
 
         <section className="mt-10 overflow-hidden rounded-3xl border border-white/15 bg-black/35 shadow-2xl shadow-black/25 backdrop-blur-xl">
           <div className="border-b border-white/10 px-6 py-5 sm:px-7">
-            <p className="text-sm uppercase tracking-[0.2em] text-white/35">
-              The road ahead
-            </p>
-            <h2 className="mt-2 text-3xl text-white">Future plans</h2>
-            <p className="mt-2 max-w-2xl text-base leading-relaxed text-white/50">
-              With the support of our users, AstroMusic can grow into a
-              smarter and more capable music companion.
-            </p>
+            <h2 className="text-3xl text-white">Future plans</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[640px] border-collapse text-left">
